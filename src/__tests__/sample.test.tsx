@@ -4,6 +4,6 @@ import React from "react";
 describe("Sample test", () => {
   it("renders text", () => {
     render(<div>Hello Jest!</div>);
-    expect(screen.getByText("Hello Jest!")).not.toBeNull();
+    expect(screen.getByText("Hello Jest!")).toBeInTheDocument();
   });
 });
